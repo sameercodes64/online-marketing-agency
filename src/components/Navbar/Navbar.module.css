@@ -1,0 +1,50 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--card-border);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.link {
+    font-size: 0.95rem;
+    color: var(--foreground);
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: var(--primary);
+}
+
+.cta {
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.cta:hover {
+    background: #2563eb;
+}
